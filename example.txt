@@ -1,0 +1,11 @@
+  state = {
+    greeting: 'hello',
+    lang: 'english'
+  }
+
+  chyangeLang() {
+    this.setState({lang : 'arm'})
+    if(this.state.lang === arm) {
+      this.setState({greeting: 'barev'})
+    }
+  }

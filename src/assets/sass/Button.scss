@@ -1,0 +1,34 @@
+.click-button {
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  button {
+    text-transform: uppercase;
+    text-decoration: none;	 
+    color: #fff;
+    font-family: monospace;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 40px;
+    background: #FF5951;
+    border: 1px solid #ff5951;
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px rgba(255, 89, 81, 0.4);	
+    &:hover {
+      background: #181617;
+      border: 1px solid #181617;
+    }
+  }
+  
+}
+
+@media (max-width: 1600px) {
+  .click-button {
+    margin-top: calc(4em * 0.75);
+    margin-bottom: calc(4em * 0.75);
+    button {
+      font-size: calc(17px * 0.75);
+      padding: calc(10px * 0.75) calc(40px * 0.75);
+    }
+  }
+}

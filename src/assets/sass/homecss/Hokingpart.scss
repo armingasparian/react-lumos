@@ -1,0 +1,263 @@
+.coursesection {
+	text-align: center;
+  position: relative;
+  color: #333;
+  max-width: 1500px;
+  padding: 0 2em;
+  margin: 0 auto;
+  h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FF5951;
+    font-size: 25px;
+    margin: 1.5em 0 1.2em 0;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 0.5em;
+  }
+  .p1 {
+    font-size: 18px;
+  }
+  .p2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1.5em;
+  }
+  small {
+    font-style: italic;
+    font-size: 16px;
+  }
+  .p1::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-color: #FF5951;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    border-radius: 100%;
+  }
+}
+.picsection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 3em auto;
+  a {
+    padding: 20px;
+    text-decoration: none;
+  }
+}
+.coursecontent {
+  text-align: center;
+  p {
+    color: #fff;
+    margin-top: 3px;
+    margin-bottom: 0;
+  } 
+}
+#courses {
+  height: 150px;
+  width: 200px;
+  border-radius: 5px;
+  transition: 0.4s;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.coursehtml {
+  background-image: linear-gradient(to bottom right,#E0004E,#F10456,#E8457D,#F3578D);
+  border: 2px solid #F92B72;
+}
+.coursecss {
+  background-image: linear-gradient(to bottom right,#0157E3,#0077CF,#0183E3,#42A3EB);
+	border: 2px solid #087AF2;
+}
+.coursejs {
+  background-image: linear-gradient(to bottom right,#DA5300,#EA5900,#EA800F,#EA9A0F);
+	border: 2px solid #F27908;
+}
+.coursephp {
+  background-image: linear-gradient(to bottom right,#733BF5,#7C4AF2,#875BF0,#936BF0);
+	border: 2px solid #875BF0;
+}
+.coursemysql {
+  background-image: linear-gradient(to bottom right,#069E1A,#07D122,#04EC23,#39FE54);
+	border: 2px solid #04EC23;
+}
+.whyus {
+  background: url(../../../assets/images/pics/whyus.jpg) no-repeat center top / cover;
+  background-attachment: fixed;
+	position: relative;
+	width: 100%;
+  height: 100%;
+	font-family: sans-serif;
+	text-align: center;
+  background-size: cover;
+  text-transform: uppercase;
+  display: block;
+  justify-content: center;
+  &::before { 
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: #545353;
+    opacity: 0.68;
+  }
+  > div {
+    padding: 7em 0;
+    position: inherit;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  h4 {
+    color: #FF5951;
+    font-size: 30px;
+    font-weight: bold;
+    position: inherit;
+  }
+  h1 {
+    font-size: 44px;
+    font-weight: bold;
+    position: inherit;
+    color: #fff;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+  }
+}
+.whyusicon {
+  position: inherit;
+}
+.whywe {
+  color: #fff;
+  text-transform: none;
+  position: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2em auto;
+  .why {
+    width: 250px;
+    margin: 50px;
+    text-align: center;
+  }
+  h4 {
+    color: #fff;  
+    font-size: 25px!important;
+    margin: 1.5em 0;
+  }
+  p {
+    font-size: 15px;
+    font-weight: normal;
+  }
+}
+@media (max-width: 1600px) {
+  .coursesection {
+    max-width: calc(1500px * 0.75);
+    h4 {    
+      font-size: calc(25px * 0.75);
+      margin: 1.5em 0 calc(1.2em * 0.75) 0;
+    }
+    h3 {
+      font-size: calc(38px * 0.75);
+      margin-bottom: calc(0.5em * 0.75);
+    }
+    .p1 {
+      font-size: calc(18px * 0.75);
+    }
+    .p2 {
+      font-size: calc(16px * 0.75);
+      margin-top: calc(1.5em * 0.75);
+    }
+    small {
+      font-size: calc(16px * 0.75);
+    }
+  }
+  .picsection {
+    max-width: calc(1500px * 0.75);
+    margin: calc(3em * 0.75) auto;
+    a {
+      padding:calc(20px * 0.75);
+    }
+  }
+  .coursecontent {
+    img {
+      width: calc(100% * 0.75)
+    }
+    p {
+      font-size: calc(16px * 0.75);
+    }
+  }
+  #courses {
+    height: calc(150px * 0.75);
+    width: calc(200px * 0.75);
+  }  
+  .whyus {
+    > div {
+      padding: calc(7em * 0.75) 0;
+      max-width: calc(1500px * 0.75);
+    }
+    h4 {
+      font-size: calc(30px * 0.75);
+    }
+    h1 {
+      font-size: calc(44px * 0.75);
+      margin-bottom: calc(1em * 0.75);
+    }
+  }
+  .whywe {
+    margin: calc(2em * 0.75) auto;
+    .why {
+      width: calc(250px * 0.75);
+      margin: calc(40px * 0.75);
+      h4 {
+        font-size: calc(25px * 0.75)!important;
+        margin: calc(1.5em * 0.75) 0;
+      }
+      p {
+        font-size: calc(15px * 0.75);
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .coursesection .p1::after {
+    width: 70%;
+  }
+}
+@media (max-width: 575px) {
+  .picsection {
+    flex-direction: column;
+    align-items: center;
+  }
+  #courses {
+    height: 200px;
+    width: 460px;
+  }
+  .coursecontent {
+    img {
+      width: 100%;
+    }
+    p {
+      font-size: 20px;
+    }
+  } 
+  .whywe {
+    .why {
+      width: 500px;
+      p {
+      font-size: 15px;
+    }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.container1 {
+	box-sizing: border-box;
+}
+.sliderBlock {
+	width: 100%;
+	height: 1000px;
+	> div {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover; 
+	}
+}
+.fade {
+	animation-name: fade;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+} 
+@keyframes fade {
+	from {opacity: 0.4} 
+	to {opacity: 1}	
+}
+.show-caption {
+	top: 9.5em;
+  left: 6em;
+  text-align: left;
+  position: absolute;
+  animation: text 2.5s 1;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+	h2 {
+		color: #fff;
+		font-size: 75px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	h3 {
+		color: #fff;
+		font-size: 45px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+@keyframes text {
+	0% {
+		transform: scale(0.5);
+	}	
+	85% {
+		transform: scale(1);
+	}
+}
+.sliderBlock {
+	.aboutAsFromHome {
+		font-size: 18px;
+		font-weight: bold;
+		font-family: monospace;
+		text-decoration: none;
+		background-color: #FF5951;
+		padding: 15px 40px;
+		color: #333;
+		text-transform: uppercase;
+		border-radius: 5px;
+		box-shadow: 0px 2px 5px #333;
+		&:hover {
+			background-color: #000;
+			color: #fff;
+		}
+	}
+	p {
+		padding-top: 25em;
+		padding-left: 6em;
+		text-align: left;
+		position: absolute;
+		animation: mymove 2.5s 1;
+		animation-iteration-count: infinite;
+		animation-duration: 4s;
+	}
+}
+@keyframes mymove {
+	from {top: 15em;}
+	to {top: -2em;}
+}
+
+@media (max-width: 1600px) {
+	.sliderBlock {
+		height: calc(715px * 0.75);
+		.aboutAsFromHome {
+			font-size: calc(18px * 0.75);
+			padding: calc(15px * 0.75) calc(40px * 0.75);
+		}
+		p {
+			padding-top: calc(25em * 0.75);
+			padding-left: calc(6em * 0.75);
+		}
+	}
+	.show-caption {
+		top: calc(9.5em * 0.75);
+		left: calc(6em * 0.75);
+	}
+	.show-caption {
+		h2 {
+			font-size: calc(75px * 0.75);
+		}
+		h3 {
+			font-size: calc(45px * 0.75);
+		}
+	} 
+	@keyframes mymove {
+		from {top: calc(15em * 0.75);}
+		to {top: calc(-2em * 0.75);}
+	}
+}
+@media (max-width: 575px) {
+	.show-caption {
+		left: calc(4em * 0.75);
+		h2 {
+			font-size: calc(40px * 0.75);
+		}
+		h3 {
+			font-size: calc(30px * 0.75);
+		}
+	}
+	.sliderBlock p {
+		padding-left: calc(4em * 0.75);
+	}
+}

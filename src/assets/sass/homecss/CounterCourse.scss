@@ -1,0 +1,92 @@
+.rolikaboutus {
+  margin-top: 3em;
+  h4 {
+    color: #ff5951;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+  }
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    font-size: 24px;
+  }
+}
+.rolikcounter {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+.teams {
+  width: 150px;
+  margin: 4em 3em;
+  div {
+    img {
+        height: 80px;
+    }
+  }
+  > div {
+     text-align: center;
+  }
+  div:last-child {
+    text-align: center;
+  }
+  h3 {
+    font-size: 75px;
+    font-weight: bolder;
+    color: #043a73;
+  }
+  p {
+    font-size: 15px;
+    min-width: max-content;
+  }
+}
+
+@media (max-width: 1600px) {
+  .rolikaboutus {
+    margin-top: calc(3em * 0.75);
+    h4 {
+      font-size: calc(30px * 0.75);
+    }  
+    h3 {
+      font-size: calc(24px * 0.75);
+    }
+  }
+  .rolikcounter {
+    max-width: calc(1500px * 0.75);
+  }
+  .teams {
+    width: calc(150px * 0.75);
+    margin: calc(4em * 0.75) calc(3em * 0.75);
+    div {
+      img {
+        height: calc(80px * 0.75);
+      }
+    }
+    h3 {
+      font-size: calc(75px * 0.75);
+    }
+    p {
+       font-size: calc(15px * 0.75);
+    }
+  }
+}
+@media (max-width: 767px) {
+  .rolikcounter {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 575px) {
+  .rolikcounter .teams {
+    width: 100%;
+    margin: 2em;
+    p {
+      font-size: 15px;
+    }
+  }
+}

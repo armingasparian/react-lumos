@@ -1,0 +1,47 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./sass/Menu.scss";
+@import "./sass/Footer.scss";
+@import "./sass/Button.scss";
+@import "./sass/homecss/CounterCourse.scss";
+@import "./sass/homecss/CustomerReview.scss";
+@import "./sass/homecss/Hokingpart.scss";
+@import "./sass/homecss/HomeSlider.scss";
+@import "./sass/gallerycss/Gallery.scss";
+@import "./sass/authcss/Contact.scss";
+@import "./sass/authcss/AuthHeader.scss";
+@import "./sass/authcss/AuthRightBar.scss";
+@import "./sass/authcss/Login.scss";
+@import "./sass/authcss/Register.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, fantasy, "Montserrat";
+  box-sizing: border-box;
+  transition: all .3s;
+  max-width: 100%;
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+.pagescroll {
+	height: 600px;
+}
+::-webkit-scrollbar {
+	width: 15px;
+}
+::-webkit-scrollbar-track {
+	background: #E8E8E8;
+}
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(to bottom, #E8E8E8, #FF5555, #FF5951, #E8E8E8);
+	border-radius: 10px;
+	border: 1px solid #FF5951;	
+}
+#login {
+  display: flex;
+}
